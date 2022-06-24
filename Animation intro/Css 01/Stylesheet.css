@@ -1,0 +1,35 @@
+body 
+{
+    font-family: system-ui, -apple-system;
+    background: hs1(200 50% 5%);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.Button
+{
+    font-size: 3rem;
+    appearance:none;
+    cursor: pointer;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    background-color: transparent;
+    color:hsl(200, 83%, 44%);
+    border:5px solid currentColor;
+    border-radius: 0.125em;
+}
+.Button::before
+{
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    z-index: -1;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: rgba(5, 213, 5, 0.868);
+    opacity: .5;
+
+}

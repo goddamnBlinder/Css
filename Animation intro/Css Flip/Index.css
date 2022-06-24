@@ -1,0 +1,79 @@
+.maincontainer
+ {
+    position: relative;
+    height: 280px;
+    width: 320px;
+
+}
+.thecard
+ {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition:all 1.5s ease;
+
+}
+.thecard:hover
+{
+    transform: rotateY(180Deg);
+}
+.thecard:focus 
+{
+    transform: rotateY(180Deg);
+}
+.front 
+{
+ padding-right: 5%;
+ position: absolute;
+ width:100%;
+ height:100%;
+ backface-visibility: hidden;
+ color:limegreen;
+ text-align: right;
+ font-family: Verdana, sans-serif;
+ font-weight: bold;
+ background-image: url(roman-synkevych-fjj7lVpCxRE-unsplash.jpg);
+ background-position: 100vh;
+ background-size: cover;
+ border-radius: 10%;
+
+}
+.back 
+{
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    background: rgba(45, 17, 17, 0.738);
+    color: rgba(104, 198, 11, 0.77);
+    transform: rotateY(180Deg);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10%;
+    font-weight: bolder;
+    padding:2%;
+
+}
+.h1 
+{
+ text-decoration:underline yellowgreen 50%;
+ font-size: 27px;
+
+}
+h1 
+{
+    text-decoration: underline azure 50%;
+    color: azure;
+}
+p{
+    color: greenyellow;
+    text-align: right;
+}
+.p 
+{
+    text-transform: capitalize;
+    text-align: center;
+    color: azure;
+    list-style: none;
+    line-height: 30px;
+}

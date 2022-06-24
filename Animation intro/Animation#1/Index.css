@@ -1,0 +1,81 @@
+
+.child-box
+{
+    background-color: #ff0000;
+    width: 100px;
+    height: 100px; position: relative;
+    animation: first 4s infinite alternate ease-in;
+}
+
+.child-box:hover
+{
+    animation-play-state: paused;
+    opacity: 0.5;
+}
+
+
+@keyframes first{
+    0% {transform: translateX(0%);
+       left: 0px;
+       top: 0px;
+    }
+
+     25% { background-color: goldenrod;
+        left: 500px;
+        top: 0px;
+    }
+    50% { background-color: orangered;
+         left: 550px;
+         top: 550px;
+         border-radius: 50%;
+        }
+    75% { background-color: limegreen;
+         left: 0px;
+          top: 500px;}
+    100% {transform:rotateX(60deg)skew(1.3); background-color: plum;
+          left: 0px;
+          top: 0px;
+          border-radius: 0px;}
+}
+ /* ------------------------------------SECOND PART----------------------------------- */
+
+ #Circle 
+ {
+    width: 200px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 15px solid red;
+    margin: auto;
+    border-radius: 50%;
+   animation-name: Circle;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-play-state: running;
+
+
+}
+@keyframes Circle {
+    0%{border-color: red; transform: scale(1);}
+    25%{border-color: gold; transform: scale(1.1);}
+    50%{ border-color: lime; transform: scale(1.3);}
+    75%{ border-color: dodgerblue; transform: scale(1.1);}
+    100%{ border-color: blueviolet; transform: scale(1);}
+}
+
+#Square 
+{
+    width: 75px;
+    height: 75px;
+    border: 5px solid limegreen;
+    animation: block 2s infinite ease-in-out alternate-reverse; 
+}
+@keyframes block
+{
+   0% {transform:rotate(0deg)}
+   25% {border-color: aqua; border-width: 10px;}
+   50% { border-color: coral; border-width: 20px;}
+   75% { border-color: yellow; border-width: 40px;}
+   100% {transform: rotate(360deg); border-width: 5px;}
+}
